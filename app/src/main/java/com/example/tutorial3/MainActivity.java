@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.myButton);
         timeText = findViewById(R.id.time);
 
-//        event listen for the button
+//        event listener for the button
         button.setOnClickListener(new View.OnClickListener() {
             @Override
 //            this function is called when the user presses the button
             public void onClick(View view) {
-//                toast();
+                Toast.makeText(getApplicationContext(), "hello world", Toast.LENGTH_LONG).show();
                 showTimePickerDialog();
             }
         });
